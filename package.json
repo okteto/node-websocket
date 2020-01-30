@@ -1,0 +1,32 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Example of a websocket-based application developed in Kubernetes with Okteto",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "nodemon": "^2.0.2",
+    "websocket": "^1.0.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon --ext js,ejs, server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okteto/node-websocket.git"
+  },
+  "keywords": [
+    "node",
+    "websocket",
+    "okteto"
+  ],
+  "author": "Ramiro Berrelleza <rberrelleza@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/okteto/node-websocket/issues"
+  },
+  "homepage": "https://github.com/okteto/node-websocket#readme"
+}
