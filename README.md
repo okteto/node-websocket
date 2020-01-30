@@ -1,5 +1,5 @@
 # Chat Application demo
-This is an example of a websocket-based application developed in Kubernetes using Okteto Cloud, Okteto and NodeJS.
+This is an example of a websocket-based NodeJS application developed in an Okteto Cloud development environment.
 
 1. Install the [Okteto CLI](https://okteto.com/docs/getting-started/installation)
 
@@ -7,7 +7,7 @@ This is an example of a websocket-based application developed in Kubernetes usin
       
         okteto login 
 
-      (if you don't have an account, it will automatically be created for you).
+      > If this is the first time you use Okteto Cloud, a free account will be automatically created for you).
 
 1. Download the credentials: 
 
@@ -17,20 +17,24 @@ This is an example of a websocket-based application developed in Kubernetes usin
 
        okteto up --deploy
 
-1. Install the required dependencies in your remote development evironment: 
+   > `okteto up` will deploy your development environment in Okteto Cloud and drop you on a remote shell. Any command that you  execute here will be executed in your remote development environment.
+
+1. Install the required dependencies in your remote development environment: 
 
        okteto> npm install
 
-1. Start the application: 
+1. Start the application in your remote development environment: 
 
        okteto> npm start
 
-1. Go to Okteto Cloud, and click on your 
+1. Go to [Okteto Cloud](https://cloud.okteto.com) and click on your 
 development environment's URL (it will something like https://chat-*YOUR_GITHUB_ID*.cloud.okteto.net).
 
 1. Start chatting!
 
-Okteto will automatically synchronize your local changes to your remote development environment, and `nodemon`will automatically detect then and reload the process. Try adding a background color to `views/index.js`, or add more logs to `server.js` to try it out.
+Okteto will automatically synchronize your local changes to your remote development environment and `nodemon`will automatically detect then and reload the process. Open this project in your local IDE and try adding a background color to `views/index.js`, or add more logs to `server.js` and reload the page to see your changes instantly.
 
-Run `okteto down` when you are done to delete your remote development environment.
+# Cleanup
+
+Run `okteto down` when you are done to delete your remote development environment. You can use `okteto down -v` if you also want to delete the synchronization volume.
 
