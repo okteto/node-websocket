@@ -7,7 +7,7 @@ This is an example of a websocket-based NodeJS application developed in an Oktet
       
         okteto login 
 
-      > If this is the first time you use Okteto Cloud, a free account will be automatically created for you).
+      > If this is the first time you use Okteto Cloud, a free account will be automatically created for you.
 
 1. Download the credentials: 
 
@@ -32,7 +32,7 @@ development environment's URL (it will something like https://chat-YOUR_GITHUB_I
 
 1. Start chatting!
 
-Okteto will automatically synchronize your local changes to your remote development environment and `nodemon`will automatically detect then and reload the process. Open this project in your local IDE and try adding a background color to `views/index.js`, or add more logs to `server.js` and reload the page to see your changes instantly.
+Okteto will automatically synchronize your local changes to your remote development environment and `nodemon`will automatically detect it and reload the process. Open this project in your local IDE and try adding a background color to `views/index.js` or a new log to `server.js` and reload the page to see your changes instantly.
 
 # Cleanup
 
