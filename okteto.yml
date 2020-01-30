@@ -1,4 +1,4 @@
-name: nodejs-websocket
+name: chat
 image: okteto/node:10
 command:
 - bash
