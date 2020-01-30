@@ -28,7 +28,7 @@ This is an example of a websocket-based NodeJS application developed in an Oktet
        okteto> npm start
 
 1. Go to [Okteto Cloud](https://cloud.okteto.com) and click on your 
-development environment's URL (it will something like https://chat-*YOUR_GITHUB_ID*.cloud.okteto.net).
+development environment's URL (it will something like https://chat-YOUR_GITHUB_ID.cloud.okteto.net).
 
 1. Start chatting!
 
