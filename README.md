@@ -5,17 +5,13 @@ This is an example of a websocket-based NodeJS application developed in an Oktet
 
 1. Connect your CLI to your [Okteto Cloud](https://cloud.okteto.com) account: 
       
-        okteto login 
+        okteto context use https://cloud.okteto.com
 
       > If this is the first time you use Okteto Cloud, a free account will be automatically created for you.
 
-1. Download the credentials: 
-
-        okteto namespace
-
 1. Launch your NodeJS development environment:
 
-       okteto up --deploy
+       okteto up
 
    > `okteto up` will deploy your development environment in Okteto Cloud and drop you on a remote shell. Any command that you  execute here will be executed in your remote development environment.
 

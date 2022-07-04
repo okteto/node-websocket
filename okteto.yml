@@ -1,7 +1,6 @@
 name: chat
+autocreate: true
 image: okteto/node:10
-command:
-- bash
-workdir: /usr/src/app
-persistentVolume:
-  enabled: false
+command: bash
+sync:
+  - .:/usr/src/app
